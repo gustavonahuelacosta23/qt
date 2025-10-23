@@ -307,7 +307,7 @@ void MainWindow::guardarEstado()
         statusBar()->showMessage("Archivo guardado correctamente.", 3000);
         QMessageBox::information(this, "Guardar", "El estado se guardó correctamente.");
     } else {
-        QMessageBox::warning(this, "Guardar", "No se pudo abrir el archivo para escribir.");
+        QMessageBox::warning(this, "Guardar", "No se pudo abrir el archivo para reescribir.");
     }
 }
 
@@ -371,6 +371,7 @@ void MainWindow::cargarEstado()
         statusBar()->showMessage("Archivo cargado correctamente.", 3000);
         QMessageBox::information(this, "Cargar", "El archivo se cargó correctamente.");
     } else {
-        QMessageBox::warning(this, "Cargar", "No se pudo abrir el archivo para lectura.");
+        QMessageBox::warning(this, "Cargar", "No se pudo abrir el archivo para su lectura.");
     }
 }
+
